@@ -1,59 +1,84 @@
 {
   "active_prediction_evaluation": {
-    "anchor_at": "2026-06-03T11:32:00+00:00",
-    "created_at": "2026-06-03T11:22:25.916271+00:00",
+    "anchor_at": "2026-06-03T11:56:00+00:00",
+    "created_at": "2026-06-03T11:56:28.607256+00:00",
     "predicted_interval_ticks": 125,
-    "predicted_restock_at": "2026-06-03T13:37:00+00:00",
+    "predicted_restock_at": "2026-06-03T14:01:00+00:00",
     "prediction_method": "DEFAULT_125_TICKS",
-    "window_end_at": "2026-06-03T13:47:00+00:00",
-    "window_start_at": "2026-06-03T13:27:00+00:00"
+    "window_end_at": "2026-06-03T14:17:00+00:00",
+    "window_start_at": "2026-06-03T13:45:00+00:00"
   },
-  "current_cycle_depletion_rate_samples": [
-    134.80564581187664,
-    75.67735266763005,
-    79.65305915290067,
-    58.10345325231524,
-    98.54182772114002,
-    52.83379418544243,
-    79.7209147930683,
-    73.76291891907547,
-    102.85284066975028,
-    29.364554036868014,
-    101.97183856170031,
-    49.91282103995817,
-    45.45203761843475,
-    129.7079509507992
-  ],
+  "current_cycle_depletion_rate_samples": [],
   "depletion_rate_history": {
     "HIGH_TRAFFIC": [],
     "LOW_TRAFFIC": [],
-    "MID_TRAFFIC": []
+    "MID_TRAFFIC": [
+      134.80564581187664,
+      75.67735266763005,
+      79.65305915290067,
+      58.10345325231524,
+      98.54182772114002,
+      52.83379418544243,
+      79.7209147930683,
+      73.76291891907547,
+      102.85284066975028,
+      29.364554036868014,
+      101.97183856170031,
+      49.91282103995817,
+      45.45203761843475,
+      129.7079509507992
+    ]
   },
-  "depletion_rate_per_minute": 265.0,
+  "depletion_rate_per_minute": 77.66520591026536,
   "depletion_to_restock_interval_ticks": [],
-  "last_estimated_depleted_at": null,
+  "last_estimated_depleted_at": "2026-06-03T11:56:00+00:00",
   "last_estimated_restock_at": "2026-06-03T11:22:00+00:00",
   "last_notified_restock_normalized_at": "2026-06-03T11:22:00+00:00",
-  "last_observed_at": "2026-06-03T11:54:23.632045+00:00",
+  "last_observed_at": "2026-06-03T11:56:28.606832+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
     "observed_at": "2026-06-03T11:54:23.632045+00:00",
     "quantity": 102
   },
-  "last_predicted_restock_at": "2026-06-03T13:37:00+00:00",
-  "last_quantity": 102,
+  "last_predicted_restock_at": "2026-06-03T14:01:00+00:00",
+  "last_quantity": 0,
   "last_restock_normalized_at": "2026-06-03T11:22:00+00:00",
-  "pending_notifications": [],
+  "pending_notifications": [
+    {
+      "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-06-03T11:56:00+00:00:2026-06-03T14:01:00+00:00",
+      "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
+      "prediction": {
+        "airstrip_departure_at": "2026-06-03T14:01:00+00:00",
+        "airstrip_latest_departure_at": "2026-06-03T14:01:00+00:00",
+        "airstrip_ping_at": "2026-06-03T14:01:00+00:00",
+        "airstrip_recommended_departure_at": "2026-06-03T14:01:00+00:00",
+        "airstrip_target_restock_at": "2026-06-03T16:39:00+00:00",
+        "based_on_restock_event_id": 0,
+        "business_class_target_restock_at": "2026-06-03T14:01:00+00:00",
+        "business_departure_at": "2026-06-03T12:53:00+00:00",
+        "business_latest_departure_at": "2026-06-03T12:53:00+00:00",
+        "business_ping_at": "2026-06-03T12:53:00+00:00",
+        "business_recommended_departure_at": "2026-06-03T12:53:00+00:00",
+        "predicted_interval_ticks": 125,
+        "predicted_restock_at": "2026-06-03T14:01:00+00:00",
+        "prediction_method": "DEFAULT_125_TICKS"
+      },
+      "status": "PENDING",
+      "target_time": "2026-06-03T14:01:00+00:00"
+    }
+  ],
   "prediction_accuracy": {
     "accuracy": null,
     "correct_count": 0,
     "evaluated_count": 0,
     "last_error_ticks": null,
-    "tolerance_ticks": null
+    "tolerance_ticks": 16
   },
   "prediction_evaluation_history": [],
-  "recent_depleted_times": [],
+  "recent_depleted_times": [
+    "2026-06-03T11:56:00+00:00"
+  ],
   "recent_restock_times": [
     "2026-06-03T11:22:00+00:00"
   ],
