@@ -75,7 +75,6 @@ def format_restock_detected(
         f"Next predicted restock: {_format_ts_pair(prediction.predicted_restock_at)}",
         f"Prediction interval: {prediction.predicted_interval_ticks} ticks",
         f"Prediction ID: {prediction_id}",
-        f"________________________________________________________________"
     ]
     departure_lines: list[str] = []
     if include_airstrip:
@@ -83,6 +82,7 @@ def format_restock_detected(
             [
                 "Airstrip:",
                 f"- Recommended departure: {_format_ts_pair(prediction.airstrip_recommended_departure_at)}",
+                f"________________________________________________________________"
             ]
         )
     if include_business:
