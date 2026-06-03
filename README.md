@@ -61,7 +61,7 @@ pytest
 
 ## GitHub Actions
 
-The workflow is `.github/workflows/monitor.yml`. It supports manual runs and a scheduled run every 5 minutes.
+The workflow is `.github/workflows/monitor.yml`. It only supports manual `workflow_dispatch` runs, so an external cronjob can trigger it without GitHub's built-in schedule.
 
 Create these repository secrets:
 
@@ -79,10 +79,10 @@ data/github_actions_state_uk.json
 data/github_actions_state_jp.json
 ```
 
-The UK state is seeded from the original monitor state. The Japan state is created by the first successful Japan workflow run.
+Both state files start from the app default state. They are created by the first successful workflow run and committed by the final state commit job.
 
 ## Notes
 
 - Discord payload format stays compact: restock detected, next predicted restock, prediction interval, prediction ID, and recommended departures.
 - The formatter no longer hard-codes `UK`; messages use the configured/event country.
-- GitHub scheduled workflows can be delayed or skipped during platform congestion, so reminders include the configured delay buffer but cannot guarantee real-time delivery.
+- External cron timing still depends on GitHub Actions queue time after dispatch, so reminders include the configured delay buffer but cannot guarantee real-time delivery.
