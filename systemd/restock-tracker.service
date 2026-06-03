@@ -1,0 +1,18 @@
+[Unit]
+Description=YATA UK Item 206 Restock Tracker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/restock-tracker
+EnvironmentFile=/opt/restock-tracker/.env
+ExecStart=/opt/restock-tracker/.venv/bin/python -m app.main
+Restart=always
+RestartSec=10
+User=restock
+Group=restock
+
+[Install]
+WantedBy=multi-user.target
+

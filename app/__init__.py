@@ -1,0 +1,2 @@
+"""YATA restock monitor package."""
+

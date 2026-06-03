@@ -1,0 +1,12 @@
+.env
+!.env.uk
+!.env.jp
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.sqlite3
+*.sqlite3-*
+!data/
+!data/github_actions_state_uk.json
+!data/github_actions_state_jp.json

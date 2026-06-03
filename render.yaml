@@ -1,0 +1,18 @@
+services:
+  - type: worker
+    name: yata-restock-monitor
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python monitor.py
+    envVars:
+      - key: YATA_URL
+        value: https://yata.yt/api/v1/travel/export/
+      - key: ITEM_ID
+        value: "206"
+      - key: COUNTRY
+        value: UK
+      - key: POLL_SECONDS
+        value: "10"
+      - key: DISCORD_WEBHOOK_URL
+        sync: false
+

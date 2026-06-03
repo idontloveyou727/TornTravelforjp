@@ -1,0 +1,134 @@
+name: YATA Restock Monitors
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: yata-restock-monitors
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    name: Monitor ${{ matrix.bot.name }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        bot:
+          - name: uk
+            env_file: .env.uk
+            state_path: data/github_actions_state_uk.json
+            webhook_secret: DISCORD_WEBHOOK_URL_UK
+          - name: jp
+            env_file: .env.jp
+            state_path: data/github_actions_state_jp.json
+            webhook_secret: DISCORD_WEBHOOK_URL_JP
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run monitor once
+        env:
+          ENV_FILE: ${{ matrix.bot.env_file }}
+          DISCORD_WEBHOOK_URL: ${{ secrets[matrix.bot.webhook_secret] }}
+        run: python monitor.py --once
+
+      - name: Upload state
+        uses: actions/upload-artifact@v4
+        with:
+          name: state-${{ matrix.bot.name }}
+          path: ${{ matrix.bot.state_path }}
+          if-no-files-found: error
+
+  commit-state:
+    name: Commit updated states
+    runs-on: ubuntu-latest
+    needs: monitor
+    if: ${{ needs.monitor.result == 'success' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Download UK state
+        uses: actions/download-artifact@v4
+        with:
+          name: state-uk
+          path: data
+
+      - name: Download Japan state
+        uses: actions/download-artifact@v4
+        with:
+          name: state-jp
+          path: data
+
+      - name: Commit updated state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/github_actions_state_uk.json data/github_actions_state_jp.json
+
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+          elif python - <<'PY'
+          import json
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          STATE_PATHS = [
+              "data/github_actions_state_uk.json",
+              "data/github_actions_state_jp.json",
+          ]
+          IGNORED_KEYS = {"last_observed_at"}
+
+          def comparable_state(text):
+              state = json.loads(text)
+              if not isinstance(state, dict):
+                  return state
+              return {key: value for key, value in state.items() if key not in IGNORED_KEYS}
+
+          for state_path in STATE_PATHS:
+              current = comparable_state(Path(state_path).read_text(encoding="utf-8"))
+              try:
+                  previous_text = subprocess.check_output(
+                      ["git", "show", f"HEAD:{state_path}"],
+                      stderr=subprocess.DEVNULL,
+                      text=True,
+                  )
+                  previous = comparable_state(previous_text)
+              except subprocess.CalledProcessError:
+                  previous = None
+              if previous != current:
+                  sys.exit(1)
+
+          sys.exit(0)
+          PY
+          then
+            echo "Only last_observed_at changed; skipping commit."
+          else
+            git commit -m "Update restock monitor states"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
