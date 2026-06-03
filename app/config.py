@@ -161,8 +161,8 @@ def load_config() -> Config:
         state_path=Path(_get_env("STATE_PATH", None, "./data/github_actions_state.json")),
         github_actions_delay_buffer_minutes=_parse_int("GITHUB_ACTIONS_DELAY_BUFFER_MINUTES", None, 5, minimum=0),
         ping_lead_minutes=_parse_int("PING_LEAD_MINUTES", None, 0, minimum=0),
-        enable_airstrip_pings=_parse_bool("ENABLE_AIRSTRIP_PINGS", None, True),
-        enable_business_class_pings=_parse_bool("ENABLE_BUSINESS_CLASS_PINGS", None, True),
+        enable_airstrip_pings=_parse_bool("ENABLE_AIRSTRIP", "ENABLE_AIRSTRIP_PINGS", True),
+        enable_business_class_pings=_parse_bool("ENABLE_BUSINESS_CLASS", "ENABLE_BUSINESS_CLASS_PINGS", True),
         airstrip_duration_minutes=_parse_int(
             "AIRSTRIP_DURATION_MINUTES",
             None,

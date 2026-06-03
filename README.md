@@ -31,6 +31,15 @@ BUSINESS_CLASS_TARGET_RESTOCK_CYCLE=1
 
 Japan Airstrip targets the projected second restock because the flight is long enough to miss the first restock. Japan Business Class targets the first predicted restock.
 
+Japan travel recommendations can be toggled directly in `.env.jp`:
+
+```bash
+ENABLE_AIRSTRIP=1
+ENABLE_BUSINESS_CLASS=1
+```
+
+Set a value to `0` to hide that travel type from restock recommendations and disable its departure reminder.
+
 Prediction interval history stays at 10 recent cycles by default. Accuracy is tracked separately with `PREDICTION_ACCURACY_HISTORY_WINDOW=50`, so the displayed accuracy is calculated from up to the latest 50 evaluated predictions.
 
 ## Run Locally

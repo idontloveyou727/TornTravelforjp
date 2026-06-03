@@ -62,3 +62,24 @@ def test_env_file_loads_japan_defaults(monkeypatch, tmp_path) -> None:
     assert config.business_class_duration_minutes == 68
     assert config.airstrip_target_restock_cycle == 2
     assert config.business_class_target_restock_cycle == 1
+
+
+def test_japan_env_file_can_disable_airstrip_and_business_class(monkeypatch, tmp_path) -> None:
+    env_file = tmp_path / ".env.jp"
+    env_file.write_text(
+        "\n".join(
+            [
+                "COUNTRY=Japan",
+                "ENABLE_AIRSTRIP=0",
+                "ENABLE_BUSINESS_CLASS=0",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setenv("ENV_FILE", str(env_file))
+
+    config = load_config()
+
+    assert config.enable_airstrip_pings is False
+    assert config.enable_business_class_pings is False
