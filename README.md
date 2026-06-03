@@ -31,6 +31,8 @@ BUSINESS_CLASS_TARGET_RESTOCK_CYCLE=1
 
 Japan Airstrip targets the projected second restock because the flight is long enough to miss the first restock. Japan Business Class targets the first predicted restock.
 
+Prediction interval history stays at 10 recent cycles by default. Accuracy is tracked separately with `PREDICTION_ACCURACY_HISTORY_WINDOW=50`, so the displayed accuracy is calculated from up to the latest 50 evaluated predictions.
+
 ## Run Locally
 
 ```powershell
@@ -79,7 +81,7 @@ data/github_actions_state_uk.json
 data/github_actions_state_jp.json
 ```
 
-Both state files start from the app default state. They are created by the first successful workflow run and committed by the final state commit job.
+UK starts with seeded depletion-rate and depletion-to-restock interval data in `data/github_actions_state_uk.json`, with accuracy reset. Japan starts from default state and creates `data/github_actions_state_jp.json` on the first successful Japan run.
 
 ## Notes
 

@@ -56,6 +56,7 @@ def make_config(tmp_path: Path) -> Config:
         prediction_interval_max_ticks=180,
         prediction_interval_mad_threshold=3.5,
         prediction_accuracy_tolerance_ticks=10,
+        prediction_accuracy_history_window=50,
         prediction_history_window=10,
         log_level="INFO",
     )

@@ -93,6 +93,7 @@ class Config:
     prediction_interval_max_ticks: int
     prediction_interval_mad_threshold: float
     prediction_accuracy_tolerance_ticks: int
+    prediction_accuracy_history_window: int
     prediction_history_window: int
     log_level: str
 
@@ -125,6 +126,7 @@ class Config:
             "prediction_interval_max_ticks": self.prediction_interval_max_ticks,
             "prediction_interval_mad_threshold": self.prediction_interval_mad_threshold,
             "prediction_accuracy_tolerance_ticks": self.prediction_accuracy_tolerance_ticks,
+            "prediction_accuracy_history_window": self.prediction_accuracy_history_window,
             "prediction_history_window": self.prediction_history_window,
             "log_level": self.log_level,
         }
@@ -187,6 +189,7 @@ def load_config() -> Config:
         prediction_interval_max_ticks=prediction_interval_max_ticks,
         prediction_interval_mad_threshold=_parse_float("PREDICTION_INTERVAL_MAD_THRESHOLD", None, 3.5, minimum=0),
         prediction_accuracy_tolerance_ticks=_parse_int("PREDICTION_ACCURACY_TOLERANCE_TICKS", None, 10, minimum=0),
+        prediction_accuracy_history_window=_parse_int("PREDICTION_ACCURACY_HISTORY_WINDOW", None, 50),
         prediction_history_window=_parse_int("PREDICTION_HISTORY_WINDOW", None, 10),
         log_level=_get_env("LOG_LEVEL", None, "INFO").upper(),
     )

@@ -2,7 +2,15 @@ from copy import deepcopy
 from datetime import datetime, timezone
 
 from app.depletion import HIGH_TRAFFIC, LOW_TRAFFIC, MID_TRAFFIC
-from app.json_state import DEFAULT_STATE, JsonStateStore, add_depletion_rate, prediction_from_json, prediction_to_json
+from app.json_state import (
+    DEFAULT_STATE,
+    JsonStateStore,
+    add_depletion_rate,
+    evaluate_active_prediction,
+    prediction_from_json,
+    prediction_to_json,
+    store_active_prediction_evaluation,
+)
 from app.models import Prediction
 
 
@@ -124,3 +132,39 @@ def test_prediction_json_old_state_falls_back_to_recommended_as_latest() -> None
     assert decoded.business_latest_departure_at == decoded.business_departure_at
     assert decoded.effective_airstrip_target_restock_at == decoded.predicted_restock_at
     assert decoded.effective_business_class_target_restock_at == decoded.predicted_restock_at
+
+
+def test_prediction_accuracy_history_keeps_requested_window() -> None:
+    state = deepcopy(DEFAULT_STATE)
+
+    for index in range(55):
+        predicted = datetime(2026, 1, 1, 12, 0, tzinfo=timezone.utc)
+        prediction = Prediction(
+            based_on_restock_event_id=1,
+            predicted_restock_at=predicted,
+            predicted_interval_ticks=25,
+            prediction_method="DEFAULT_125_TICKS",
+            airstrip_departure_at=datetime(2026, 1, 1, 10, 4, tzinfo=timezone.utc),
+            business_departure_at=datetime(2026, 1, 1, 11, 7, tzinfo=timezone.utc),
+            airstrip_latest_departure_at=datetime(2026, 1, 1, 10, 9, tzinfo=timezone.utc),
+            business_latest_departure_at=datetime(2026, 1, 1, 11, 12, tzinfo=timezone.utc),
+            airstrip_ping_at=datetime(2026, 1, 1, 10, 4, tzinfo=timezone.utc),
+            business_ping_at=datetime(2026, 1, 1, 11, 7, tzinfo=timezone.utc),
+        )
+        store_active_prediction_evaluation(
+            state,
+            prediction,
+            tolerance_ticks=10,
+            created_at=predicted,
+            anchor_at=predicted,
+        )
+        evaluate_active_prediction(
+            state,
+            actual_restock_at=predicted.replace(minute=index % 60),
+            tolerance_ticks=10,
+            evaluated_at=predicted,
+            max_items=50,
+        )
+
+    assert len(state["prediction_evaluation_history"]) == 50
+    assert state["prediction_accuracy"]["evaluated_count"] == 50

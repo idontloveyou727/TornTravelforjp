@@ -8,6 +8,7 @@ def test_prediction_config_defaults(monkeypatch, tmp_path) -> None:
         "PREDICTION_INTERVAL_MAX_TICKS",
         "PREDICTION_INTERVAL_MAD_THRESHOLD",
         "PREDICTION_ACCURACY_TOLERANCE_TICKS",
+        "PREDICTION_ACCURACY_HISTORY_WINDOW",
     ]:
         monkeypatch.delenv(name, raising=False)
 
@@ -17,6 +18,7 @@ def test_prediction_config_defaults(monkeypatch, tmp_path) -> None:
     assert config.prediction_interval_max_ticks == 180
     assert config.prediction_interval_mad_threshold == 3.5
     assert config.prediction_accuracy_tolerance_ticks == 10
+    assert config.prediction_accuracy_history_window == 50
     assert config.airstrip_duration_minutes == 111
     assert config.business_class_duration_minutes == 48
     assert config.airstrip_target_restock_cycle == 1

@@ -179,7 +179,7 @@ def _handle_json_restock(config: Config, state: dict, event, observation) -> Non
         actual_restock_at=normalized,
         tolerance_ticks=config.prediction_accuracy_tolerance_ticks,
         evaluated_at=utc_now(),
-        max_items=config.prediction_history_window,
+        max_items=config.prediction_accuracy_history_window,
     )
     if evaluation:
         LOGGER.info(
