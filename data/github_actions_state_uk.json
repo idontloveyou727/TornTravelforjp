@@ -1,4 +1,5 @@
 {
+  "active_prediction_evaluation": null,
   "current_cycle_depletion_rate_samples": [
     490.4960977661057
   ],
@@ -81,6 +82,15 @@
     113,
     124
   ],
+  "last_estimated_depleted_at": null,
+  "last_estimated_restock_at": null,
+  "last_notified_restock_normalized_at": null,
+  "last_observed_at": "2026-06-03T11:10:43.953415+00:00",
+  "last_positive_observation": null,
+  "last_predicted_restock_at": null,
+  "last_quantity": 0,
+  "last_restock_normalized_at": null,
+  "pending_notifications": [],
   "prediction_accuracy": {
     "accuracy": null,
     "correct_count": 0,
@@ -88,5 +98,8 @@
     "last_error_ticks": null,
     "tolerance_ticks": null
   },
-  "prediction_evaluation_history": []
+  "prediction_evaluation_history": [],
+  "recent_depleted_times": [],
+  "recent_restock_times": [],
+  "sent_notification_keys": []
 }
