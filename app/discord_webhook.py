@@ -75,6 +75,7 @@ def format_restock_detected(
         f"Next predicted restock: {_format_ts_pair(prediction.predicted_restock_at)}",
         f"Prediction interval: {prediction.predicted_interval_ticks} ticks",
         f"Prediction ID: {prediction_id}",
+        f"________________________________________________________________"
     ]
     departure_lines: list[str] = []
     if include_airstrip:
@@ -110,6 +111,7 @@ def format_airstrip_reminder(prediction: Prediction, ping_lead_minutes: int = 0,
             _format_ts_pair(prediction.airstrip_ping_at),
             "",
             _ping_explanation(ping_lead_minutes),
+            "________________________________________________________________",
         ]
     )
 
@@ -126,6 +128,7 @@ def format_business_reminder(prediction: Prediction, ping_lead_minutes: int = 0,
             _format_ts_pair(prediction.business_recommended_departure_at),
             "",
             _ping_explanation(ping_lead_minutes),
+            "________________________________________________________________",
         ]
     )
 
