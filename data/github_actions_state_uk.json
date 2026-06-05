@@ -1,12 +1,12 @@
 {
   "active_prediction_evaluation": {
-    "anchor_at": "2026-06-05T16:43:00+00:00",
-    "created_at": "2026-06-05T16:42:30.342754+00:00",
-    "predicted_interval_ticks": 116,
-    "predicted_restock_at": "2026-06-05T18:39:00+00:00",
+    "anchor_at": "2026-06-05T19:00:00+00:00",
+    "created_at": "2026-06-05T18:40:47.653532+00:00",
+    "predicted_interval_ticks": 117,
+    "predicted_restock_at": "2026-06-05T20:57:00+00:00",
     "prediction_method": "MEDIAN_HISTORY",
-    "window_end_at": "2026-06-05T18:48:00+00:00",
-    "window_start_at": "2026-06-05T18:30:00+00:00"
+    "window_end_at": "2026-06-05T21:06:00+00:00",
+    "window_start_at": "2026-06-05T20:48:00+00:00"
   },
   "current_cycle_depletion_rate_samples": [],
   "depletion_rate_history": {
@@ -124,7 +124,6 @@
   },
   "depletion_rate_per_minute": 123.6531684812719,
   "depletion_to_restock_interval_ticks": [
-    112,
     126,
     114,
     128,
@@ -133,27 +132,28 @@
     112,
     114,
     115,
+    117,
     117
   ],
   "last_estimated_depleted_at": "2026-06-05T16:43:00+00:00",
-  "last_estimated_restock_at": "2026-06-05T16:32:00+00:00",
-  "last_notified_restock_normalized_at": "2026-06-05T16:32:00+00:00",
-  "last_observed_at": "2026-06-05T17:56:37.072945+00:00",
+  "last_estimated_restock_at": "2026-06-05T18:40:00+00:00",
+  "last_notified_restock_normalized_at": "2026-06-05T18:40:00+00:00",
+  "last_observed_at": "2026-06-05T18:40:47.652863+00:00",
   "last_positive_observation": {
     "country": "UK",
     "item_id": 206,
-    "observed_at": "2026-06-05T16:40:36.923669+00:00",
-    "quantity": 185
+    "observed_at": "2026-06-05T18:40:47.652863+00:00",
+    "quantity": 2341
   },
-  "last_predicted_restock_at": "2026-06-05T18:39:00+00:00",
-  "last_quantity": 0,
-  "last_restock_normalized_at": "2026-06-05T16:32:00+00:00",
+  "last_predicted_restock_at": "2026-06-05T20:57:00+00:00",
+  "last_quantity": 2341,
+  "last_restock_normalized_at": "2026-06-05T18:40:00+00:00",
   "pending_notifications": [],
   "prediction_accuracy": {
-    "accuracy": 0.875,
-    "correct_count": 21,
-    "evaluated_count": 24,
-    "last_error_ticks": 3,
+    "accuracy": 0.88,
+    "correct_count": 22,
+    "evaluated_count": 25,
+    "last_error_ticks": 1,
     "tolerance_ticks": 9
   },
   "prediction_evaluation_history": [
@@ -492,6 +492,20 @@
       "tolerance_ticks": 9,
       "window_end_at": "2026-06-05T16:38:00+00:00",
       "window_start_at": "2026-06-05T16:20:00+00:00"
+    },
+    {
+      "actual_restock_at": "2026-06-05T18:40:00+00:00",
+      "anchor_at": "2026-06-05T16:43:00+00:00",
+      "correct": true,
+      "created_at": "2026-06-05T16:42:30.342754+00:00",
+      "error_ticks": 1,
+      "evaluated_at": "2026-06-05T18:40:47.653164+00:00",
+      "predicted_interval_ticks": 116,
+      "predicted_restock_at": "2026-06-05T18:39:00+00:00",
+      "prediction_method": "MEDIAN_HISTORY",
+      "tolerance_ticks": 9,
+      "window_end_at": "2026-06-05T18:48:00+00:00",
+      "window_start_at": "2026-06-05T18:30:00+00:00"
     }
   ],
   "recent_depleted_times": [
@@ -508,7 +522,6 @@
     "2026-06-05T16:43:00+00:00"
   ],
   "recent_restock_times": [
-    "2026-06-04T17:23:00+00:00",
     "2026-06-04T19:27:00+00:00",
     "2026-06-04T21:53:00+00:00",
     "2026-06-05T00:25:00+00:00",
@@ -518,7 +531,8 @@
     "2026-06-05T10:15:00+00:00",
     "2026-06-05T12:22:00+00:00",
     "2026-06-05T14:27:00+00:00",
-    "2026-06-05T16:32:00+00:00"
+    "2026-06-05T16:32:00+00:00",
+    "2026-06-05T18:40:00+00:00"
   ],
   "sent_notification_keys": []
 }
