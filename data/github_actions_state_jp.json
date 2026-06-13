@@ -9,7 +9,8 @@
     "window_start_at": "2026-06-13T18:13:00+00:00"
   },
   "current_cycle_depletion_rate_samples": [
-    178.93579694789472
+    178.93579694789472,
+    141.69992350751025
   ],
   "depletion_rate_history": {
     "HIGH_TRAFFIC": [
@@ -124,7 +125,7 @@
       90.5079089215637
     ]
   },
-  "depletion_rate_per_minute": 68.41836842257165,
+  "depletion_rate_per_minute": 46.72162410179624,
   "depletion_to_restock_interval_ticks": [
     47,
     131,
@@ -140,40 +141,17 @@
   "last_estimated_depleted_at": "2026-06-13T14:09:00+00:00",
   "last_estimated_restock_at": "2026-06-13T15:56:00+00:00",
   "last_notified_restock_normalized_at": "2026-06-13T15:56:00+00:00",
-  "last_observed_at": "2026-06-13T15:58:32.638477+00:00",
+  "last_observed_at": "2026-06-13T16:01:25.397921+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
-    "observed_at": "2026-06-13T15:58:32.638477+00:00",
-    "quantity": 2076
+    "observed_at": "2026-06-13T16:01:25.397921+00:00",
+    "quantity": 1668
   },
   "last_predicted_restock_at": "2026-06-13T18:29:00+00:00",
-  "last_quantity": 2076,
+  "last_quantity": 1668,
   "last_restock_normalized_at": "2026-06-13T15:56:00+00:00",
-  "pending_notifications": [
-    {
-      "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-06-13T14:09:00+00:00:2026-06-13T16:00:00+00:00",
-      "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
-      "prediction": {
-        "airstrip_departure_at": "2026-06-13T16:00:00+00:00",
-        "airstrip_latest_departure_at": "2026-06-13T16:00:00+00:00",
-        "airstrip_ping_at": "2026-06-13T16:00:00+00:00",
-        "airstrip_recommended_departure_at": "2026-06-13T16:00:00+00:00",
-        "airstrip_target_restock_at": "2026-06-13T18:38:00+00:00",
-        "based_on_restock_event_id": 0,
-        "business_class_target_restock_at": "2026-06-13T16:05:00+00:00",
-        "business_departure_at": "2026-06-13T14:57:00+00:00",
-        "business_latest_departure_at": "2026-06-13T14:57:00+00:00",
-        "business_ping_at": "2026-06-13T14:57:00+00:00",
-        "business_recommended_departure_at": "2026-06-13T14:57:00+00:00",
-        "predicted_interval_ticks": 116,
-        "predicted_restock_at": "2026-06-13T16:05:00+00:00",
-        "prediction_method": "MEDIAN_HISTORY"
-      },
-      "status": "PENDING",
-      "target_time": "2026-06-13T16:00:00+00:00"
-    }
-  ],
+  "pending_notifications": [],
   "prediction_accuracy": {
     "accuracy": 0.92,
     "correct_count": 46,
