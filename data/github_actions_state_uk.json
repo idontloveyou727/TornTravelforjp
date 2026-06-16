@@ -1,12 +1,12 @@
 {
   "active_prediction_evaluation": {
-    "anchor_at": "2026-06-16T21:58:00+00:00",
-    "created_at": "2026-06-16T21:58:43.633508+00:00",
-    "predicted_interval_ticks": 121,
-    "predicted_restock_at": "2026-06-16T23:59:00+00:00",
+    "anchor_at": "2026-06-17T00:05:00+00:00",
+    "created_at": "2026-06-16T23:52:37.406091+00:00",
+    "predicted_interval_ticks": 118,
+    "predicted_restock_at": "2026-06-17T02:03:00+00:00",
     "prediction_method": "MEDIAN_HISTORY",
-    "window_end_at": "2026-06-17T00:08:00+00:00",
-    "window_start_at": "2026-06-16T23:50:00+00:00"
+    "window_end_at": "2026-06-17T02:12:00+00:00",
+    "window_start_at": "2026-06-17T01:54:00+00:00"
   },
   "current_cycle_depletion_rate_samples": [],
   "depletion_rate_history": {
@@ -124,7 +124,6 @@
   },
   "depletion_rate_per_minute": 206.09034892003518,
   "depletion_to_restock_interval_ticks": [
-    124,
     121,
     126,
     126,
@@ -133,21 +132,22 @@
     121,
     124,
     110,
+    114,
     114
   ],
   "last_estimated_depleted_at": "2026-06-16T21:58:00+00:00",
-  "last_estimated_restock_at": "2026-06-16T21:44:00+00:00",
-  "last_notified_restock_normalized_at": "2026-06-16T21:44:00+00:00",
-  "last_observed_at": "2026-06-16T22:08:44.575871+00:00",
+  "last_estimated_restock_at": "2026-06-16T23:52:00+00:00",
+  "last_notified_restock_normalized_at": "2026-06-16T23:52:00+00:00",
+  "last_observed_at": "2026-06-16T23:52:37.405392+00:00",
   "last_positive_observation": {
     "country": "UK",
     "item_id": 206,
-    "observed_at": "2026-06-16T21:56:36.350341+00:00",
-    "quantity": 259
+    "observed_at": "2026-06-16T23:52:37.405392+00:00",
+    "quantity": 2471
   },
-  "last_predicted_restock_at": "2026-06-16T23:59:00+00:00",
-  "last_quantity": 0,
-  "last_restock_normalized_at": "2026-06-16T21:44:00+00:00",
+  "last_predicted_restock_at": "2026-06-17T02:03:00+00:00",
+  "last_quantity": 2471,
+  "last_restock_normalized_at": "2026-06-16T23:52:00+00:00",
   "pending_notifications": [],
   "prediction_accuracy": {
     "accuracy": 0.86,
@@ -157,20 +157,6 @@
     "tolerance_ticks": 9
   },
   "prediction_evaluation_history": [
-    {
-      "actual_restock_at": "2026-06-11T23:57:00+00:00",
-      "anchor_at": "2026-06-11T21:48:00+00:00",
-      "correct": true,
-      "created_at": "2026-06-11T21:48:30.585033+00:00",
-      "error_ticks": 6,
-      "evaluated_at": "2026-06-11T23:58:25.195994+00:00",
-      "predicted_interval_ticks": 123,
-      "predicted_restock_at": "2026-06-11T23:51:00+00:00",
-      "prediction_method": "MEDIAN_HISTORY",
-      "tolerance_ticks": 9,
-      "window_end_at": "2026-06-12T00:00:00+00:00",
-      "window_start_at": "2026-06-11T23:42:00+00:00"
-    },
     {
       "actual_restock_at": "2026-06-12T02:25:00+00:00",
       "anchor_at": "2026-06-12T00:25:00+00:00",
@@ -856,6 +842,20 @@
       "tolerance_ticks": 9,
       "window_end_at": "2026-06-16T22:00:00+00:00",
       "window_start_at": "2026-06-16T21:42:00+00:00"
+    },
+    {
+      "actual_restock_at": "2026-06-16T23:52:00+00:00",
+      "anchor_at": "2026-06-16T21:58:00+00:00",
+      "correct": true,
+      "created_at": "2026-06-16T21:58:43.633508+00:00",
+      "error_ticks": -7,
+      "evaluated_at": "2026-06-16T23:52:37.405708+00:00",
+      "predicted_interval_ticks": 121,
+      "predicted_restock_at": "2026-06-16T23:59:00+00:00",
+      "prediction_method": "MEDIAN_HISTORY",
+      "tolerance_ticks": 9,
+      "window_end_at": "2026-06-17T00:08:00+00:00",
+      "window_start_at": "2026-06-16T23:50:00+00:00"
     }
   ],
   "recent_depleted_times": [
@@ -872,7 +872,6 @@
     "2026-06-16T21:58:00+00:00"
   ],
   "recent_restock_times": [
-    "2026-06-16T00:01:00+00:00",
     "2026-06-16T02:20:00+00:00",
     "2026-06-16T04:33:00+00:00",
     "2026-06-16T06:59:00+00:00",
@@ -882,7 +881,8 @@
     "2026-06-16T15:31:00+00:00",
     "2026-06-16T17:44:00+00:00",
     "2026-06-16T19:40:00+00:00",
-    "2026-06-16T21:44:00+00:00"
+    "2026-06-16T21:44:00+00:00",
+    "2026-06-16T23:52:00+00:00"
   ],
   "sent_notification_keys": []
 }
