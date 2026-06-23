@@ -19,7 +19,8 @@
     15.1319246587524,
     16.347998441568663,
     13.943382842326574,
-    47.44389339784311
+    47.44389339784311,
+    17.911066517254376
   ],
   "depletion_rate_history": {
     "HIGH_TRAFFIC": [
@@ -150,39 +151,17 @@
   "last_estimated_depleted_at": "2026-06-23T23:51:00+00:00",
   "last_estimated_restock_at": "2026-06-23T22:55:00+00:00",
   "last_notified_restock_normalized_at": "2026-06-23T22:55:00+00:00",
-  "last_observed_at": "2026-06-23T23:28:30.404563+00:00",
+  "last_observed_at": "2026-06-23T23:31:11.199008+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
-    "observed_at": "2026-06-23T23:28:30.404563+00:00",
-    "quantity": 1440
+    "observed_at": "2026-06-23T23:31:11.199008+00:00",
+    "quantity": 1392
   },
   "last_predicted_restock_at": "2026-06-24T01:52:00+00:00",
-  "last_quantity": 1440,
+  "last_quantity": 1392,
   "last_restock_normalized_at": "2026-06-23T22:55:00+00:00",
   "pending_notifications": [
-    {
-      "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-06-23T20:57:00+00:00:2026-06-23T23:30:00+00:00",
-      "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
-      "prediction": {
-        "airstrip_departure_at": "2026-06-23T23:30:00+00:00",
-        "airstrip_latest_departure_at": "2026-06-23T23:30:00+00:00",
-        "airstrip_ping_at": "2026-06-23T23:30:00+00:00",
-        "airstrip_recommended_departure_at": "2026-06-23T23:30:00+00:00",
-        "airstrip_target_restock_at": "2026-06-24T02:00:00+00:00",
-        "based_on_restock_event_id": 0,
-        "business_class_target_restock_at": "2026-06-23T22:56:00+00:00",
-        "business_departure_at": "2026-06-23T21:52:00+00:00",
-        "business_latest_departure_at": "2026-06-23T21:52:00+00:00",
-        "business_ping_at": "2026-06-23T21:52:00+00:00",
-        "business_recommended_departure_at": "2026-06-23T21:52:00+00:00",
-        "predicted_interval_ticks": 119,
-        "predicted_restock_at": "2026-06-23T22:56:00+00:00",
-        "prediction_method": "MEDIAN_HISTORY"
-      },
-      "status": "PENDING",
-      "target_time": "2026-06-23T23:30:00+00:00"
-    },
     {
       "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-06-23T23:51:00+00:00:2026-06-24T02:22:00+00:00",
       "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
