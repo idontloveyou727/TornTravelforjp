@@ -138,7 +138,7 @@
   "last_estimated_depleted_at": "2026-06-26T23:08:00+00:00",
   "last_estimated_restock_at": "2026-06-26T17:20:00+00:00",
   "last_notified_restock_normalized_at": "2026-06-26T17:20:00+00:00",
-  "last_observed_at": "2026-06-26T23:52:30.212077+00:00",
+  "last_observed_at": "2026-06-26T23:54:30.059621+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
@@ -170,28 +170,6 @@
       },
       "status": "PENDING",
       "target_time": "2026-06-27T02:15:00+00:00"
-    },
-    {
-      "key": "BUSINESS_DEPARTURE_REMINDER:2026-06-26T23:08:00+00:00:2026-06-26T23:54:00+00:00",
-      "notification_type": "BUSINESS_DEPARTURE_REMINDER",
-      "prediction": {
-        "airstrip_departure_at": "2026-06-27T02:15:00+00:00",
-        "airstrip_latest_departure_at": "2026-06-27T02:15:00+00:00",
-        "airstrip_ping_at": "2026-06-27T02:15:00+00:00",
-        "airstrip_recommended_departure_at": "2026-06-27T02:15:00+00:00",
-        "airstrip_target_restock_at": "2026-06-27T04:45:00+00:00",
-        "based_on_restock_event_id": 0,
-        "business_class_target_restock_at": "2026-06-27T00:58:00+00:00",
-        "business_departure_at": "2026-06-26T23:54:00+00:00",
-        "business_latest_departure_at": "2026-06-26T23:54:00+00:00",
-        "business_ping_at": "2026-06-26T23:54:00+00:00",
-        "business_recommended_departure_at": "2026-06-26T23:54:00+00:00",
-        "predicted_interval_ticks": 110,
-        "predicted_restock_at": "2026-06-27T00:58:00+00:00",
-        "prediction_method": "MEDIAN_HISTORY"
-      },
-      "status": "PENDING",
-      "target_time": "2026-06-26T23:54:00+00:00"
     }
   ],
   "prediction_accuracy": {
