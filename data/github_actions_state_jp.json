@@ -9,7 +9,6 @@
     "window_start_at": "2026-07-09T03:01:00+00:00"
   },
   "current_cycle_depletion_rate_samples": [
-    18.787075118554274,
     7.463844332298424,
     42.74344529266437,
     21.355649512503913,
@@ -43,7 +42,8 @@
     0.39712851724813875,
     13.959440287865995,
     36.701344981081895,
-    23.97308105034294
+    23.97308105034294,
+    15.436171979137216
   ],
   "depletion_rate_history": {
     "HIGH_TRAFFIC": [
@@ -174,15 +174,15 @@
   "last_estimated_depleted_at": "2026-07-08T21:12:00+00:00",
   "last_estimated_restock_at": "2026-07-08T23:21:00+00:00",
   "last_notified_restock_normalized_at": "2026-07-08T23:21:00+00:00",
-  "last_observed_at": "2026-07-09T01:31:18.796920+00:00",
+  "last_observed_at": "2026-07-09T01:32:28.762453+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
-    "observed_at": "2026-07-09T01:31:18.796920+00:00",
-    "quantity": 141
+    "observed_at": "2026-07-09T01:32:28.762453+00:00",
+    "quantity": 123
   },
   "last_predicted_restock_at": "2026-07-09T03:17:00+00:00",
-  "last_quantity": 141,
+  "last_quantity": 123,
   "last_restock_normalized_at": "2026-07-08T23:21:00+00:00",
   "pending_notifications": [],
   "prediction_accuracy": {
