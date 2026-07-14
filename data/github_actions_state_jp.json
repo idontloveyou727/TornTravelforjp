@@ -1,45 +1,16 @@
 {
   "active_prediction_evaluation": {
-    "anchor_at": "2026-07-14T17:52:00+00:00",
-    "created_at": "2026-07-14T16:21:08.051433+00:00",
+    "anchor_at": "2026-07-14T16:53:00+00:00",
+    "created_at": "2026-07-14T16:54:32.872048+00:00",
     "predicted_interval_ticks": 119,
-    "predicted_restock_at": "2026-07-14T19:51:00+00:00",
+    "predicted_restock_at": "2026-07-14T18:52:00+00:00",
     "prediction_method": "MEDIAN_HISTORY",
-    "window_end_at": "2026-07-14T20:07:00+00:00",
-    "window_start_at": "2026-07-14T19:35:00+00:00"
+    "window_end_at": "2026-07-14T19:08:00+00:00",
+    "window_start_at": "2026-07-14T18:36:00+00:00"
   },
-  "current_cycle_depletion_rate_samples": [
-    159.1019386008358,
-    175.89915759283937,
-    44.867363985499075,
-    140.46625250060222,
-    66.65118305662101,
-    58.8878670941452,
-    18.386920096650844,
-    77.27468898885449,
-    44.610955518371,
-    85.31205304886147,
-    37.28855410464486,
-    125.74577806122635,
-    39.535391449342384,
-    104.4665229926804
-  ],
+  "current_cycle_depletion_rate_samples": [],
   "depletion_rate_history": {
     "HIGH_TRAFFIC": [
-      13.269315058679737,
-      155.4076298321224,
-      53.02107638901553,
-      53.95707852166355,
-      74.09770987134321,
-      2.497133706693667,
-      38.81992739177764,
-      37.45088940036632,
-      38.945229052578334,
-      22.970585951997858,
-      47.772399684122796,
-      33.49705785415812,
-      87.72976763565963,
-      14.66131562390692,
       20.174501754653274,
       39.03067795981493,
       15.518883036325335,
@@ -60,7 +31,21 @@
       21.132204608921015,
       13.252495232812414,
       17.240578285955905,
-      13.385840461147303
+      13.385840461147303,
+      159.1019386008358,
+      175.89915759283937,
+      44.867363985499075,
+      140.46625250060222,
+      66.65118305662101,
+      58.8878670941452,
+      18.386920096650844,
+      77.27468898885449,
+      44.610955518371,
+      85.31205304886147,
+      37.28855410464486,
+      125.74577806122635,
+      39.535391449342384,
+      104.4665229926804
     ],
     "LOW_TRAFFIC": [
       0.6842143705202133,
@@ -137,7 +122,7 @@
       43.35328887409768
     ]
   },
-  "depletion_rate_per_minute": 26.36259720966674,
+  "depletion_rate_per_minute": 37.90238848058967,
   "depletion_to_restock_interval_ticks": [
     110,
     124,
@@ -150,20 +135,65 @@
     122,
     118
   ],
-  "last_estimated_depleted_at": "2026-07-14T14:21:00+00:00",
+  "last_estimated_depleted_at": "2026-07-14T16:53:00+00:00",
   "last_estimated_restock_at": "2026-07-14T16:19:00+00:00",
   "last_notified_restock_normalized_at": "2026-07-14T16:19:00+00:00",
-  "last_observed_at": "2026-07-14T16:52:28.097054+00:00",
+  "last_observed_at": "2026-07-14T16:54:32.871604+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
     "observed_at": "2026-07-14T16:52:28.097054+00:00",
     "quantity": 17
   },
-  "last_predicted_restock_at": "2026-07-14T19:51:00+00:00",
-  "last_quantity": 17,
+  "last_predicted_restock_at": "2026-07-14T18:52:00+00:00",
+  "last_quantity": 0,
   "last_restock_normalized_at": "2026-07-14T16:19:00+00:00",
-  "pending_notifications": [],
+  "pending_notifications": [
+    {
+      "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-07-14T16:53:00+00:00:2026-07-14T19:27:00+00:00",
+      "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
+      "prediction": {
+        "airstrip_departure_at": "2026-07-14T19:27:00+00:00",
+        "airstrip_latest_departure_at": "2026-07-14T19:27:00+00:00",
+        "airstrip_ping_at": "2026-07-14T19:27:00+00:00",
+        "airstrip_recommended_departure_at": "2026-07-14T19:27:00+00:00",
+        "airstrip_target_restock_at": "2026-07-14T21:57:00+00:00",
+        "based_on_restock_event_id": 0,
+        "business_class_target_restock_at": "2026-07-14T18:52:00+00:00",
+        "business_departure_at": "2026-07-14T17:48:00+00:00",
+        "business_latest_departure_at": "2026-07-14T17:48:00+00:00",
+        "business_ping_at": "2026-07-14T17:48:00+00:00",
+        "business_recommended_departure_at": "2026-07-14T17:48:00+00:00",
+        "predicted_interval_ticks": 119,
+        "predicted_restock_at": "2026-07-14T18:52:00+00:00",
+        "prediction_method": "MEDIAN_HISTORY"
+      },
+      "status": "PENDING",
+      "target_time": "2026-07-14T19:27:00+00:00"
+    },
+    {
+      "key": "BUSINESS_DEPARTURE_REMINDER:2026-07-14T16:53:00+00:00:2026-07-14T17:48:00+00:00",
+      "notification_type": "BUSINESS_DEPARTURE_REMINDER",
+      "prediction": {
+        "airstrip_departure_at": "2026-07-14T19:27:00+00:00",
+        "airstrip_latest_departure_at": "2026-07-14T19:27:00+00:00",
+        "airstrip_ping_at": "2026-07-14T19:27:00+00:00",
+        "airstrip_recommended_departure_at": "2026-07-14T19:27:00+00:00",
+        "airstrip_target_restock_at": "2026-07-14T21:57:00+00:00",
+        "based_on_restock_event_id": 0,
+        "business_class_target_restock_at": "2026-07-14T18:52:00+00:00",
+        "business_departure_at": "2026-07-14T17:48:00+00:00",
+        "business_latest_departure_at": "2026-07-14T17:48:00+00:00",
+        "business_ping_at": "2026-07-14T17:48:00+00:00",
+        "business_recommended_departure_at": "2026-07-14T17:48:00+00:00",
+        "predicted_interval_ticks": 119,
+        "predicted_restock_at": "2026-07-14T18:52:00+00:00",
+        "prediction_method": "MEDIAN_HISTORY"
+      },
+      "status": "PENDING",
+      "target_time": "2026-07-14T17:48:00+00:00"
+    }
+  ],
   "prediction_accuracy": {
     "accuracy": 0.98,
     "correct_count": 49,
@@ -874,7 +904,6 @@
     }
   ],
   "recent_depleted_times": [
-    "2026-07-13T09:23:00+00:00",
     "2026-07-13T12:25:00+00:00",
     "2026-07-13T15:02:00+00:00",
     "2026-07-13T17:47:00+00:00",
@@ -884,7 +913,8 @@
     "2026-07-14T06:23:00+00:00",
     "2026-07-14T09:13:00+00:00",
     "2026-07-14T11:53:00+00:00",
-    "2026-07-14T14:21:00+00:00"
+    "2026-07-14T14:21:00+00:00",
+    "2026-07-14T16:53:00+00:00"
   ],
   "recent_restock_times": [
     "2026-07-13T11:16:00+00:00",
