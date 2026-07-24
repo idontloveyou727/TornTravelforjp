@@ -25,7 +25,8 @@
     10.413629167851825,
     35.567829625481885,
     47.19021507951741,
-    56.71222656653908
+    56.71222656653908,
+    18.980337175912183
   ],
   "depletion_rate_history": {
     "HIGH_TRAFFIC": [
@@ -156,40 +157,17 @@
   "last_estimated_depleted_at": "2026-07-24T14:27:00+00:00",
   "last_estimated_restock_at": "2026-07-24T16:32:00+00:00",
   "last_notified_restock_normalized_at": "2026-07-24T16:32:00+00:00",
-  "last_observed_at": "2026-07-24T17:18:23.846163+00:00",
+  "last_observed_at": "2026-07-24T17:20:42.937475+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
-    "observed_at": "2026-07-24T17:18:23.846163+00:00",
-    "quantity": 386
+    "observed_at": "2026-07-24T17:20:42.937475+00:00",
+    "quantity": 342
   },
   "last_predicted_restock_at": "2026-07-24T20:18:00+00:00",
-  "last_quantity": 386,
+  "last_quantity": 342,
   "last_restock_normalized_at": "2026-07-24T16:32:00+00:00",
-  "pending_notifications": [
-    {
-      "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-07-24T14:27:00+00:00:2026-07-24T17:20:00+00:00",
-      "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
-      "prediction": {
-        "airstrip_departure_at": "2026-07-24T17:20:00+00:00",
-        "airstrip_latest_departure_at": "2026-07-24T17:20:00+00:00",
-        "airstrip_ping_at": "2026-07-24T17:20:00+00:00",
-        "airstrip_recommended_departure_at": "2026-07-24T17:20:00+00:00",
-        "airstrip_target_restock_at": "2026-07-24T19:50:00+00:00",
-        "based_on_restock_event_id": 0,
-        "business_class_target_restock_at": "2026-07-24T16:26:00+00:00",
-        "business_departure_at": "2026-07-24T15:22:00+00:00",
-        "business_latest_departure_at": "2026-07-24T15:22:00+00:00",
-        "business_ping_at": "2026-07-24T15:22:00+00:00",
-        "business_recommended_departure_at": "2026-07-24T15:22:00+00:00",
-        "predicted_interval_ticks": 119,
-        "predicted_restock_at": "2026-07-24T16:26:00+00:00",
-        "prediction_method": "MEDIAN_HISTORY"
-      },
-      "status": "PENDING",
-      "target_time": "2026-07-24T17:20:00+00:00"
-    }
-  ],
+  "pending_notifications": [],
   "prediction_accuracy": {
     "accuracy": 0.98,
     "correct_count": 49,
