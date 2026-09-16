@@ -1,12 +1,12 @@
 {
   "active_prediction_evaluation": {
-    "anchor_at": "2026-09-16T17:25:00+00:00",
-    "created_at": "2026-09-16T17:26:27.129635+00:00",
-    "predicted_interval_ticks": 117,
-    "predicted_restock_at": "2026-09-16T19:22:00+00:00",
+    "anchor_at": "2026-09-16T19:34:00+00:00",
+    "created_at": "2026-09-16T19:24:24.813929+00:00",
+    "predicted_interval_ticks": 119,
+    "predicted_restock_at": "2026-09-16T21:33:00+00:00",
     "prediction_method": "MEDIAN_HISTORY",
-    "window_end_at": "2026-09-16T19:31:00+00:00",
-    "window_start_at": "2026-09-16T19:13:00+00:00"
+    "window_end_at": "2026-09-16T21:42:00+00:00",
+    "window_start_at": "2026-09-16T21:24:00+00:00"
   },
   "current_cycle_depletion_rate_samples": [],
   "depletion_rate_history": {
@@ -124,7 +124,6 @@
   },
   "depletion_rate_per_minute": 265.0,
   "depletion_to_restock_interval_ticks": [
-    112,
     7,
     111,
     125,
@@ -133,21 +132,22 @@
     115,
     67,
     53,
+    119,
     119
   ],
   "last_estimated_depleted_at": "2026-09-16T17:25:00+00:00",
-  "last_estimated_restock_at": "2026-09-16T15:28:00+00:00",
-  "last_notified_restock_normalized_at": "2026-09-16T15:28:00+00:00",
-  "last_observed_at": "2026-09-16T19:22:27.233747+00:00",
+  "last_estimated_restock_at": "2026-09-16T19:24:00+00:00",
+  "last_notified_restock_normalized_at": "2026-09-16T19:24:00+00:00",
+  "last_observed_at": "2026-09-16T19:24:24.813237+00:00",
   "last_positive_observation": {
     "country": "UK",
     "item_id": 206,
-    "observed_at": "2026-09-16T17:24:24.440445+00:00",
-    "quantity": 88
+    "observed_at": "2026-09-16T19:24:24.813237+00:00",
+    "quantity": 2495
   },
-  "last_predicted_restock_at": "2026-09-16T19:22:00+00:00",
-  "last_quantity": 0,
-  "last_restock_normalized_at": "2026-09-16T15:28:00+00:00",
+  "last_predicted_restock_at": "2026-09-16T21:33:00+00:00",
+  "last_quantity": 2495,
+  "last_restock_normalized_at": "2026-09-16T19:24:00+00:00",
   "pending_notifications": [],
   "prediction_accuracy": {
     "accuracy": 0.58,
@@ -157,20 +157,6 @@
     "tolerance_ticks": 9
   },
   "prediction_evaluation_history": [
-    {
-      "actual_restock_at": "2026-08-25T01:46:00+00:00",
-      "anchor_at": "2026-08-24T23:46:00+00:00",
-      "correct": true,
-      "created_at": "2026-08-24T23:46:20.241637+00:00",
-      "error_ticks": -6,
-      "evaluated_at": "2026-08-25T01:46:21.207349+00:00",
-      "predicted_interval_ticks": 126,
-      "predicted_restock_at": "2026-08-25T01:52:00+00:00",
-      "prediction_method": "MEDIAN_HISTORY",
-      "tolerance_ticks": 9,
-      "window_end_at": "2026-08-25T02:01:00+00:00",
-      "window_start_at": "2026-08-25T01:43:00+00:00"
-    },
     {
       "actual_restock_at": "2026-08-25T05:22:00+00:00",
       "anchor_at": "2026-08-25T03:09:00+00:00",
@@ -856,6 +842,20 @@
       "tolerance_ticks": 9,
       "window_end_at": "2026-09-16T15:35:00+00:00",
       "window_start_at": "2026-09-16T15:17:00+00:00"
+    },
+    {
+      "actual_restock_at": "2026-09-16T19:24:00+00:00",
+      "anchor_at": "2026-09-16T17:25:00+00:00",
+      "correct": true,
+      "created_at": "2026-09-16T17:26:27.129635+00:00",
+      "error_ticks": 2,
+      "evaluated_at": "2026-09-16T19:24:24.813571+00:00",
+      "predicted_interval_ticks": 117,
+      "predicted_restock_at": "2026-09-16T19:22:00+00:00",
+      "prediction_method": "MEDIAN_HISTORY",
+      "tolerance_ticks": 9,
+      "window_end_at": "2026-09-16T19:31:00+00:00",
+      "window_start_at": "2026-09-16T19:13:00+00:00"
     }
   ],
   "recent_depleted_times": [
@@ -872,7 +872,6 @@
     "2026-09-16T17:25:00+00:00"
   ],
   "recent_restock_times": [
-    "2026-09-11T13:52:00+00:00",
     "2026-09-12T15:54:00+00:00",
     "2026-09-14T07:22:00+00:00",
     "2026-09-14T09:16:00+00:00",
@@ -882,7 +881,8 @@
     "2026-09-16T03:40:00+00:00",
     "2026-09-16T09:16:00+00:00",
     "2026-09-16T10:22:00+00:00",
-    "2026-09-16T15:28:00+00:00"
+    "2026-09-16T15:28:00+00:00",
+    "2026-09-16T19:24:00+00:00"
   ],
   "sent_notification_keys": []
 }
