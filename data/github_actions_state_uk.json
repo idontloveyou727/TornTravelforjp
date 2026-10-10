@@ -1,12 +1,12 @@
 {
   "active_prediction_evaluation": {
-    "anchor_at": "2026-10-10T16:45:00+00:00",
-    "created_at": "2026-10-10T16:46:30.062154+00:00",
-    "predicted_interval_ticks": 128,
-    "predicted_restock_at": "2026-10-10T18:53:00+00:00",
+    "anchor_at": "2026-10-10T19:07:00+00:00",
+    "created_at": "2026-10-10T18:56:53.670788+00:00",
+    "predicted_interval_ticks": 129,
+    "predicted_restock_at": "2026-10-10T21:16:00+00:00",
     "prediction_method": "MEDIAN_HISTORY",
-    "window_end_at": "2026-10-10T19:02:00+00:00",
-    "window_start_at": "2026-10-10T18:44:00+00:00"
+    "window_end_at": "2026-10-10T21:25:00+00:00",
+    "window_start_at": "2026-10-10T21:07:00+00:00"
   },
   "current_cycle_depletion_rate_samples": [],
   "depletion_rate_history": {
@@ -124,7 +124,6 @@
   },
   "depletion_rate_per_minute": 265.0,
   "depletion_to_restock_interval_ticks": [
-    128,
     176,
     129,
     130,
@@ -133,21 +132,22 @@
     115,
     131,
     122,
+    131,
     131
   ],
   "last_estimated_depleted_at": "2026-10-10T16:45:00+00:00",
-  "last_estimated_restock_at": "2026-10-10T11:02:00+00:00",
-  "last_notified_restock_normalized_at": "2026-10-10T11:02:00+00:00",
-  "last_observed_at": "2026-10-10T18:32:25.727372+00:00",
+  "last_estimated_restock_at": "2026-10-10T18:56:00+00:00",
+  "last_notified_restock_normalized_at": "2026-10-10T18:56:00+00:00",
+  "last_observed_at": "2026-10-10T18:56:53.670102+00:00",
   "last_positive_observation": {
     "country": "UK",
     "item_id": 206,
-    "observed_at": "2026-10-10T16:44:23.342030+00:00",
-    "quantity": 35
+    "observed_at": "2026-10-10T18:56:53.670102+00:00",
+    "quantity": 2457
   },
-  "last_predicted_restock_at": "2026-10-10T18:53:00+00:00",
-  "last_quantity": 0,
-  "last_restock_normalized_at": "2026-10-10T11:02:00+00:00",
+  "last_predicted_restock_at": "2026-10-10T21:16:00+00:00",
+  "last_quantity": 2457,
+  "last_restock_normalized_at": "2026-10-10T18:56:00+00:00",
   "pending_notifications": [],
   "prediction_accuracy": {
     "accuracy": 0.52,
@@ -157,20 +157,6 @@
     "tolerance_ticks": 9
   },
   "prediction_evaluation_history": [
-    {
-      "actual_restock_at": "2026-09-20T19:58:00+00:00",
-      "anchor_at": "2026-09-20T17:47:00+00:00",
-      "correct": true,
-      "created_at": "2026-09-20T17:48:23.593359+00:00",
-      "error_ticks": 6,
-      "evaluated_at": "2026-09-20T19:58:23.493895+00:00",
-      "predicted_interval_ticks": 125,
-      "predicted_restock_at": "2026-09-20T19:52:00+00:00",
-      "prediction_method": "MEDIAN_HISTORY",
-      "tolerance_ticks": 9,
-      "window_end_at": "2026-09-20T20:01:00+00:00",
-      "window_start_at": "2026-09-20T19:43:00+00:00"
-    },
     {
       "actual_restock_at": "2026-09-20T23:34:00+00:00",
       "anchor_at": "2026-09-20T21:37:00+00:00",
@@ -856,6 +842,20 @@
       "tolerance_ticks": 9,
       "window_end_at": "2026-10-10T11:08:00+00:00",
       "window_start_at": "2026-10-10T10:50:00+00:00"
+    },
+    {
+      "actual_restock_at": "2026-10-10T18:56:00+00:00",
+      "anchor_at": "2026-10-10T16:45:00+00:00",
+      "correct": true,
+      "created_at": "2026-10-10T16:46:30.062154+00:00",
+      "error_ticks": 3,
+      "evaluated_at": "2026-10-10T18:56:53.670407+00:00",
+      "predicted_interval_ticks": 128,
+      "predicted_restock_at": "2026-10-10T18:53:00+00:00",
+      "prediction_method": "MEDIAN_HISTORY",
+      "tolerance_ticks": 9,
+      "window_end_at": "2026-10-10T19:02:00+00:00",
+      "window_start_at": "2026-10-10T18:44:00+00:00"
     }
   ],
   "recent_depleted_times": [
@@ -872,7 +872,6 @@
     "2026-10-10T16:45:00+00:00"
   ],
   "recent_restock_times": [
-    "2026-10-06T20:10:00+00:00",
     "2026-10-06T20:16:00+00:00",
     "2026-10-07T06:28:00+00:00",
     "2026-10-07T13:38:00+00:00",
@@ -882,7 +881,8 @@
     "2026-10-09T00:40:00+00:00",
     "2026-10-09T11:58:00+00:00",
     "2026-10-09T21:34:00+00:00",
-    "2026-10-10T11:02:00+00:00"
+    "2026-10-10T11:02:00+00:00",
+    "2026-10-10T18:56:00+00:00"
   ],
   "sent_notification_keys": []
 }
