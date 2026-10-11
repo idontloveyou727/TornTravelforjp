@@ -1,18 +1,14 @@
 {
   "active_prediction_evaluation": {
-    "anchor_at": "2026-10-11T03:32:00+00:00",
-    "created_at": "2026-10-11T02:56:22.382239+00:00",
+    "anchor_at": "2026-10-11T03:28:00+00:00",
+    "created_at": "2026-10-11T03:28:42.449110+00:00",
     "predicted_interval_ticks": 109,
-    "predicted_restock_at": "2026-10-11T05:21:00+00:00",
+    "predicted_restock_at": "2026-10-11T05:17:00+00:00",
     "prediction_method": "MEDIAN_HISTORY",
-    "window_end_at": "2026-10-11T05:37:00+00:00",
-    "window_start_at": "2026-10-11T05:05:00+00:00"
+    "window_end_at": "2026-10-11T05:33:00+00:00",
+    "window_start_at": "2026-10-11T05:01:00+00:00"
   },
-  "current_cycle_depletion_rate_samples": [
-    89.34131244117162,
-    112.0619023217981,
-    147.4166643967599
-  ],
+  "current_cycle_depletion_rate_samples": [],
   "depletion_rate_history": {
     "HIGH_TRAFFIC": [
       596.9580035018025,
@@ -52,9 +48,6 @@
       24.785019502769593
     ],
     "LOW_TRAFFIC": [
-      69.84488162493408,
-      112.50586119244599,
-      591.6726902770711,
       71.66819833938314,
       133.7293185509246,
       110.30552707461929,
@@ -86,7 +79,10 @@
       168.7697139854129,
       62.53573084479086,
       105.07913513302825,
-      80.57095207528779
+      80.57095207528779,
+      89.34131244117162,
+      112.0619023217981,
+      147.4166643967599
     ],
     "MID_TRAFFIC": [
       339.9800682268794,
@@ -126,7 +122,7 @@
       61.785969796443545
     ]
   },
-  "depletion_rate_per_minute": 65.83408493913639,
+  "depletion_rate_per_minute": 68.50566711214071,
   "depletion_to_restock_interval_ticks": [
     106,
     113,
@@ -139,20 +135,65 @@
     102,
     110
   ],
-  "last_estimated_depleted_at": "2026-10-11T01:05:00+00:00",
+  "last_estimated_depleted_at": "2026-10-11T03:28:00+00:00",
   "last_estimated_restock_at": "2026-10-11T02:55:00+00:00",
   "last_notified_restock_normalized_at": "2026-10-11T02:55:00+00:00",
-  "last_observed_at": "2026-10-11T03:02:23.093225+00:00",
+  "last_observed_at": "2026-10-11T03:28:42.448513+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
     "observed_at": "2026-10-11T03:02:23.093225+00:00",
     "quantity": 1688
   },
-  "last_predicted_restock_at": "2026-10-11T05:21:00+00:00",
-  "last_quantity": 1688,
+  "last_predicted_restock_at": "2026-10-11T05:17:00+00:00",
+  "last_quantity": 0,
   "last_restock_normalized_at": "2026-10-11T02:55:00+00:00",
-  "pending_notifications": [],
+  "pending_notifications": [
+    {
+      "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-10-11T03:28:00+00:00:2026-10-11T05:13:00+00:00",
+      "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
+      "prediction": {
+        "airstrip_departure_at": "2026-10-11T05:13:00+00:00",
+        "airstrip_latest_departure_at": "2026-10-11T05:13:00+00:00",
+        "airstrip_ping_at": "2026-10-11T05:13:00+00:00",
+        "airstrip_recommended_departure_at": "2026-10-11T05:13:00+00:00",
+        "airstrip_target_restock_at": "2026-10-11T07:43:00+00:00",
+        "based_on_restock_event_id": 0,
+        "business_class_target_restock_at": "2026-10-11T05:17:00+00:00",
+        "business_departure_at": "2026-10-11T04:13:00+00:00",
+        "business_latest_departure_at": "2026-10-11T04:13:00+00:00",
+        "business_ping_at": "2026-10-11T04:13:00+00:00",
+        "business_recommended_departure_at": "2026-10-11T04:13:00+00:00",
+        "predicted_interval_ticks": 109,
+        "predicted_restock_at": "2026-10-11T05:17:00+00:00",
+        "prediction_method": "MEDIAN_HISTORY"
+      },
+      "status": "PENDING",
+      "target_time": "2026-10-11T05:13:00+00:00"
+    },
+    {
+      "key": "BUSINESS_DEPARTURE_REMINDER:2026-10-11T03:28:00+00:00:2026-10-11T04:13:00+00:00",
+      "notification_type": "BUSINESS_DEPARTURE_REMINDER",
+      "prediction": {
+        "airstrip_departure_at": "2026-10-11T05:13:00+00:00",
+        "airstrip_latest_departure_at": "2026-10-11T05:13:00+00:00",
+        "airstrip_ping_at": "2026-10-11T05:13:00+00:00",
+        "airstrip_recommended_departure_at": "2026-10-11T05:13:00+00:00",
+        "airstrip_target_restock_at": "2026-10-11T07:43:00+00:00",
+        "based_on_restock_event_id": 0,
+        "business_class_target_restock_at": "2026-10-11T05:17:00+00:00",
+        "business_departure_at": "2026-10-11T04:13:00+00:00",
+        "business_latest_departure_at": "2026-10-11T04:13:00+00:00",
+        "business_ping_at": "2026-10-11T04:13:00+00:00",
+        "business_recommended_departure_at": "2026-10-11T04:13:00+00:00",
+        "predicted_interval_ticks": 109,
+        "predicted_restock_at": "2026-10-11T05:17:00+00:00",
+        "prediction_method": "MEDIAN_HISTORY"
+      },
+      "status": "PENDING",
+      "target_time": "2026-10-11T04:13:00+00:00"
+    }
+  ],
   "prediction_accuracy": {
     "accuracy": 0.98,
     "correct_count": 49,
@@ -863,7 +904,6 @@
     }
   ],
   "recent_depleted_times": [
-    "2026-10-10T03:05:00+00:00",
     "2026-10-10T05:36:00+00:00",
     "2026-10-10T07:50:00+00:00",
     "2026-10-10T10:03:00+00:00",
@@ -873,7 +913,8 @@
     "2026-10-10T18:32:00+00:00",
     "2026-10-10T20:41:00+00:00",
     "2026-10-10T23:03:00+00:00",
-    "2026-10-11T01:05:00+00:00"
+    "2026-10-11T01:05:00+00:00",
+    "2026-10-11T03:28:00+00:00"
   ],
   "recent_restock_times": [
     "2026-10-10T05:00:00+00:00",
