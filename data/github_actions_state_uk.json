@@ -9,7 +9,6 @@
     "window_start_at": "2026-10-17T17:50:00+00:00"
   },
   "current_cycle_depletion_rate_samples": [
-    1.2348287821054542,
     2.000938256623016,
     5.114269877212632,
     6.70791087780169,
@@ -43,7 +42,8 @@
     0.9881948350959339,
     11.314008171124275,
     15.260241546563762,
-    1.9361324597277794
+    1.9361324597277794,
+    1.578318001001937
   ],
   "depletion_rate_history": {
     "HIGH_TRAFFIC": [
@@ -174,15 +174,15 @@
   "last_estimated_depleted_at": "2026-10-17T13:30:00+00:00",
   "last_estimated_restock_at": "2026-10-17T15:30:00+00:00",
   "last_notified_restock_normalized_at": "2026-10-17T15:30:00+00:00",
-  "last_observed_at": "2026-10-18T03:08:25.860032+00:00",
+  "last_observed_at": "2026-10-18T03:32:30.435839+00:00",
   "last_positive_observation": {
     "country": "UK",
     "item_id": 206,
-    "observed_at": "2026-10-18T03:08:25.860032+00:00",
-    "quantity": 524
+    "observed_at": "2026-10-18T03:32:30.435839+00:00",
+    "quantity": 486
   },
   "last_predicted_restock_at": "2026-10-17T17:59:00+00:00",
-  "last_quantity": 524,
+  "last_quantity": 486,
   "last_restock_normalized_at": "2026-10-17T15:30:00+00:00",
   "pending_notifications": [],
   "prediction_accuracy": {
