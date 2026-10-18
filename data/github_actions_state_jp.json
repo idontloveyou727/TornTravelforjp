@@ -1,12 +1,12 @@
 {
   "active_prediction_evaluation": {
-    "anchor_at": "2026-10-18T04:56:00+00:00",
-    "created_at": "2026-10-18T04:20:38.556625+00:00",
+    "anchor_at": "2026-10-18T04:52:00+00:00",
+    "created_at": "2026-10-18T04:22:21.231018+00:00",
     "predicted_interval_ticks": 114,
-    "predicted_restock_at": "2026-10-18T06:50:00+00:00",
+    "predicted_restock_at": "2026-10-18T06:46:00+00:00",
     "prediction_method": "MEDIAN_HISTORY",
-    "window_end_at": "2026-10-18T07:06:00+00:00",
-    "window_start_at": "2026-10-18T06:34:00+00:00"
+    "window_end_at": "2026-10-18T07:02:00+00:00",
+    "window_start_at": "2026-10-18T06:30:00+00:00"
   },
   "current_cycle_depletion_rate_samples": [],
   "depletion_rate_history": {
@@ -138,15 +138,15 @@
   "last_estimated_depleted_at": "2026-10-18T04:56:00+00:00",
   "last_estimated_restock_at": "2026-10-18T04:14:00+00:00",
   "last_notified_restock_normalized_at": "2026-10-18T04:14:00+00:00",
-  "last_observed_at": "2026-10-18T04:20:38.556321+00:00",
+  "last_observed_at": "2026-10-18T04:22:21.230508+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
-    "observed_at": "2026-10-18T04:18:27.081356+00:00",
-    "quantity": 1990
+    "observed_at": "2026-10-18T04:22:21.230508+00:00",
+    "quantity": 1581
   },
-  "last_predicted_restock_at": "2026-10-18T06:50:00+00:00",
-  "last_quantity": 0,
+  "last_predicted_restock_at": "2026-10-18T06:46:00+00:00",
+  "last_quantity": 1581,
   "last_restock_normalized_at": "2026-10-18T04:14:00+00:00",
   "pending_notifications": [
     {
@@ -217,27 +217,13 @@
     }
   ],
   "prediction_accuracy": {
-    "accuracy": 0.98,
-    "correct_count": 49,
+    "accuracy": 0.96,
+    "correct_count": 48,
     "evaluated_count": 50,
-    "last_error_ticks": -3,
+    "last_error_ticks": -156,
     "tolerance_ticks": 16
   },
   "prediction_evaluation_history": [
-    {
-      "actual_restock_at": "2026-10-13T13:03:00+00:00",
-      "anchor_at": "2026-10-13T11:00:00+00:00",
-      "correct": true,
-      "created_at": "2026-10-13T11:01:14.318935+00:00",
-      "error_ticks": 11,
-      "evaluated_at": "2026-10-13T13:06:22.699931+00:00",
-      "predicted_interval_ticks": 112,
-      "predicted_restock_at": "2026-10-13T12:52:00+00:00",
-      "prediction_method": "MEDIAN_HISTORY",
-      "tolerance_ticks": 16,
-      "window_end_at": "2026-10-13T13:08:00+00:00",
-      "window_start_at": "2026-10-13T12:36:00+00:00"
-    },
     {
       "actual_restock_at": "2026-10-13T14:58:00+00:00",
       "anchor_at": "2026-10-13T13:14:00+00:00",
@@ -923,6 +909,20 @@
       "tolerance_ticks": 16,
       "window_end_at": "2026-10-18T04:33:00+00:00",
       "window_start_at": "2026-10-18T04:01:00+00:00"
+    },
+    {
+      "actual_restock_at": "2026-10-18T04:14:00+00:00",
+      "anchor_at": "2026-10-18T04:56:00+00:00",
+      "correct": false,
+      "created_at": "2026-10-18T04:20:38.556625+00:00",
+      "error_ticks": -156,
+      "evaluated_at": "2026-10-18T04:22:21.230733+00:00",
+      "predicted_interval_ticks": 114,
+      "predicted_restock_at": "2026-10-18T06:50:00+00:00",
+      "prediction_method": "MEDIAN_HISTORY",
+      "tolerance_ticks": 16,
+      "window_end_at": "2026-10-18T07:06:00+00:00",
+      "window_start_at": "2026-10-18T06:34:00+00:00"
     }
   ],
   "recent_depleted_times": [
