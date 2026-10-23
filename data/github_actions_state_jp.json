@@ -2502,6 +2502,7 @@
       "target_time": "2026-10-23T00:31:00+00:00"
     },
     {
+      "error_message": "Discord HTTP 404: {\"message\": \"Unknown Webhook\", \"code\": 10015}",
       "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-10-23T01:50:00+00:00:2026-10-23T03:29:00+00:00",
       "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
       "prediction": {
@@ -2520,7 +2521,8 @@
         "predicted_restock_at": "2026-10-23T03:42:00+00:00",
         "prediction_method": "MEDIAN_HISTORY"
       },
-      "status": "PENDING",
+      "sent_at": null,
+      "status": "FAILED",
       "target_time": "2026-10-23T03:29:00+00:00"
     },
     {
@@ -2548,6 +2550,7 @@
       "target_time": "2026-10-23T02:38:00+00:00"
     },
     {
+      "error_message": "Discord HTTP 404: {\"message\": \"Unknown Webhook\", \"code\": 10015}",
       "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-10-23T01:51:00+00:00:2026-10-23T03:30:00+00:00",
       "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
       "prediction": {
@@ -2566,7 +2569,8 @@
         "predicted_restock_at": "2026-10-23T03:43:00+00:00",
         "prediction_method": "MEDIAN_HISTORY"
       },
-      "status": "PENDING",
+      "sent_at": null,
+      "status": "FAILED",
       "target_time": "2026-10-23T03:30:00+00:00"
     },
     {
