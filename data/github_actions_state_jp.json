@@ -5025,6 +5025,7 @@
       "target_time": "2026-10-30T02:13:00+00:00"
     },
     {
+      "error_message": "Discord HTTP 404: {\"message\": \"Unknown Webhook\", \"code\": 10015}",
       "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-10-30T04:05:00+00:00:2026-10-30T06:23:00+00:00",
       "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
       "prediction": {
@@ -5043,7 +5044,8 @@
         "predicted_restock_at": "2026-10-30T05:54:00+00:00",
         "prediction_method": "MEDIAN_HISTORY"
       },
-      "status": "PENDING",
+      "sent_at": null,
+      "status": "FAILED",
       "target_time": "2026-10-30T06:23:00+00:00"
     },
     {
