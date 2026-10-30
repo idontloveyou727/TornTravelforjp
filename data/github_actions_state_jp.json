@@ -138,7 +138,7 @@
   "last_estimated_depleted_at": "2026-10-30T11:13:00+00:00",
   "last_estimated_restock_at": "2026-10-30T10:38:00+00:00",
   "last_notified_restock_normalized_at": "2026-10-18T15:55:00+00:00",
-  "last_observed_at": "2026-10-30T11:52:31.925758+00:00",
+  "last_observed_at": "2026-10-30T11:54:33.857494+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
@@ -5188,6 +5188,7 @@
       "target_time": "2026-10-30T13:10:00+00:00"
     },
     {
+      "error_message": "Discord HTTP 404: {\"message\": \"Unknown Webhook\", \"code\": 10015}",
       "key": "BUSINESS_DEPARTURE_REMINDER:2026-10-30T11:13:00+00:00:2026-10-30T11:53:00+00:00",
       "notification_type": "BUSINESS_DEPARTURE_REMINDER",
       "prediction": {
@@ -5206,7 +5207,8 @@
         "predicted_restock_at": "2026-10-30T12:57:00+00:00",
         "prediction_method": "MEDIAN_HISTORY"
       },
-      "status": "PENDING",
+      "sent_at": null,
+      "status": "FAILED",
       "target_time": "2026-10-30T11:53:00+00:00"
     }
   ],
