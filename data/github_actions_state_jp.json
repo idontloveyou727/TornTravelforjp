@@ -5644,6 +5644,7 @@
       "target_time": "2026-10-31T19:20:00+00:00"
     },
     {
+      "error_message": "Discord HTTP 404: {\"message\": \"Unknown Webhook\", \"code\": 10015}",
       "key": "BUSINESS_DEPARTURE_REMINDER:2026-10-31T17:22:00+00:00:2026-10-31T18:04:00+00:00",
       "notification_type": "BUSINESS_DEPARTURE_REMINDER",
       "prediction": {
@@ -5662,7 +5663,8 @@
         "predicted_restock_at": "2026-10-31T19:08:00+00:00",
         "prediction_method": "MEDIAN_HISTORY"
       },
-      "status": "PENDING",
+      "sent_at": null,
+      "status": "FAILED",
       "target_time": "2026-10-31T18:04:00+00:00"
     }
   ],
