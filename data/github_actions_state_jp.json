@@ -138,7 +138,7 @@
   "last_estimated_depleted_at": "2026-11-07T13:12:00+00:00",
   "last_estimated_restock_at": "2026-11-07T12:59:00+00:00",
   "last_notified_restock_normalized_at": "2026-10-18T15:55:00+00:00",
-  "last_observed_at": "2026-11-07T14:58:21.169197+00:00",
+  "last_observed_at": "2026-11-07T15:01:13.762574+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
@@ -8958,6 +8958,7 @@
       "target_time": "2026-11-07T11:41:00+00:00"
     },
     {
+      "error_message": "Discord HTTP 404: {\"message\": \"Unknown Webhook\", \"code\": 10015}",
       "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-11-07T13:12:00+00:00:2026-11-07T15:00:00+00:00",
       "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
       "prediction": {
@@ -8976,7 +8977,8 @@
         "predicted_restock_at": "2026-11-07T15:01:00+00:00",
         "prediction_method": "MEDIAN_HISTORY"
       },
-      "status": "PENDING",
+      "sent_at": null,
+      "status": "FAILED",
       "target_time": "2026-11-07T15:00:00+00:00"
     },
     {
