@@ -1,12 +1,12 @@
 {
   "active_prediction_evaluation": {
-    "anchor_at": "2026-11-10T03:07:00+00:00",
-    "created_at": "2026-11-10T03:01:14.913620+00:00",
-    "predicted_interval_ticks": 111,
-    "predicted_restock_at": "2026-11-10T04:58:00+00:00",
+    "anchor_at": "2026-11-10T05:19:00+00:00",
+    "created_at": "2026-11-10T05:12:25.768554+00:00",
+    "predicted_interval_ticks": 108,
+    "predicted_restock_at": "2026-11-10T07:07:00+00:00",
     "prediction_method": "MEDIAN_HISTORY",
-    "window_end_at": "2026-11-10T05:14:00+00:00",
-    "window_start_at": "2026-11-10T04:42:00+00:00"
+    "window_end_at": "2026-11-10T07:23:00+00:00",
+    "window_start_at": "2026-11-10T06:51:00+00:00"
   },
   "current_cycle_depletion_rate_samples": [],
   "depletion_rate_history": {
@@ -124,7 +124,6 @@
   },
   "depletion_rate_per_minute": 54.82525085628189,
   "depletion_to_restock_interval_ticks": [
-    128,
     106,
     111,
     111,
@@ -133,21 +132,22 @@
     231,
     121,
     110,
+    108,
     108
   ],
   "last_estimated_depleted_at": "2026-11-10T03:07:00+00:00",
-  "last_estimated_restock_at": "2026-11-10T02:41:00+00:00",
+  "last_estimated_restock_at": "2026-11-10T04:55:00+00:00",
   "last_notified_restock_normalized_at": "2026-10-18T15:55:00+00:00",
-  "last_observed_at": "2026-11-10T05:10:38.079533+00:00",
+  "last_observed_at": "2026-11-10T05:12:25.767885+00:00",
   "last_positive_observation": {
     "country": "Japan",
     "item_id": 206,
-    "observed_at": "2026-11-10T02:58:30.678223+00:00",
-    "quantity": 414
+    "observed_at": "2026-11-10T05:12:25.767885+00:00",
+    "quantity": 324
   },
-  "last_predicted_restock_at": "2026-11-10T04:58:00+00:00",
-  "last_quantity": 0,
-  "last_restock_normalized_at": "2026-11-10T02:41:00+00:00",
+  "last_predicted_restock_at": "2026-11-10T07:07:00+00:00",
+  "last_quantity": 324,
+  "last_restock_normalized_at": "2026-11-10T04:55:00+00:00",
   "pending_notifications": [
     {
       "error_message": "Discord HTTP 404: {\"message\": \"Unknown Webhook\", \"code\": 10015}",
@@ -10311,20 +10311,6 @@
   },
   "prediction_evaluation_history": [
     {
-      "actual_restock_at": "2026-11-05T09:14:00+00:00",
-      "anchor_at": "2026-11-05T07:22:00+00:00",
-      "correct": true,
-      "created_at": "2026-11-05T07:22:23.379989+00:00",
-      "error_ticks": 1,
-      "evaluated_at": "2026-11-05T09:20:38.570152+00:00",
-      "predicted_interval_ticks": 111,
-      "predicted_restock_at": "2026-11-05T09:13:00+00:00",
-      "prediction_method": "MEDIAN_HISTORY",
-      "tolerance_ticks": 16,
-      "window_end_at": "2026-11-05T09:29:00+00:00",
-      "window_start_at": "2026-11-05T08:57:00+00:00"
-    },
-    {
       "actual_restock_at": "2026-11-05T11:44:00+00:00",
       "anchor_at": "2026-11-05T09:35:00+00:00",
       "correct": false,
@@ -11009,6 +10995,20 @@
       "tolerance_ticks": 16,
       "window_end_at": "2026-11-10T03:00:00+00:00",
       "window_start_at": "2026-11-10T02:28:00+00:00"
+    },
+    {
+      "actual_restock_at": "2026-11-10T04:55:00+00:00",
+      "anchor_at": "2026-11-10T03:07:00+00:00",
+      "correct": true,
+      "created_at": "2026-11-10T03:01:14.913620+00:00",
+      "error_ticks": -3,
+      "evaluated_at": "2026-11-10T05:12:25.768209+00:00",
+      "predicted_interval_ticks": 111,
+      "predicted_restock_at": "2026-11-10T04:58:00+00:00",
+      "prediction_method": "MEDIAN_HISTORY",
+      "tolerance_ticks": 16,
+      "window_end_at": "2026-11-10T05:14:00+00:00",
+      "window_start_at": "2026-11-10T04:42:00+00:00"
     }
   ],
   "recent_depleted_times": [
@@ -11025,7 +11025,6 @@
     "2026-11-10T03:07:00+00:00"
   ],
   "recent_restock_times": [
-    "2026-11-09T05:21:00+00:00",
     "2026-11-09T05:36:00+00:00",
     "2026-11-09T07:43:00+00:00",
     "2026-11-09T09:53:00+00:00",
@@ -11035,7 +11034,8 @@
     "2026-11-09T20:15:00+00:00",
     "2026-11-09T22:31:00+00:00",
     "2026-11-10T00:28:00+00:00",
-    "2026-11-10T02:41:00+00:00"
+    "2026-11-10T02:41:00+00:00",
+    "2026-11-10T04:55:00+00:00"
   ],
   "sent_notification_keys": []
 }
