@@ -138,7 +138,7 @@
   "last_estimated_depleted_at": "2026-11-11T19:03:00+00:00",
   "last_estimated_restock_at": "2026-11-11T18:58:00+00:00",
   "last_notified_restock_normalized_at": "2026-10-18T11:30:00+00:00",
-  "last_observed_at": "2026-11-11T19:06:23.554387+00:00",
+  "last_observed_at": "2026-11-11T19:24:22.236170+00:00",
   "last_positive_observation": {
     "country": "UK",
     "item_id": 206,
@@ -3386,6 +3386,7 @@
       "target_time": "2026-11-11T20:05:00+00:00"
     },
     {
+      "error_message": "Discord HTTP 404: {\"message\": \"Unknown Webhook\", \"code\": 10015}",
       "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-11-11T19:03:00+00:00:2026-11-11T19:23:00+00:00",
       "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
       "prediction": {
@@ -3404,7 +3405,8 @@
         "predicted_restock_at": "2026-11-11T21:08:00+00:00",
         "prediction_method": "DEFAULT_125_TICKS"
       },
-      "status": "PENDING",
+      "sent_at": null,
+      "status": "FAILED",
       "target_time": "2026-11-11T19:23:00+00:00"
     },
     {
