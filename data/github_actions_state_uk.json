@@ -25,7 +25,8 @@
     13.498860424025768,
     9.599296947491565,
     6.509389251546251,
-    40.59652567039544
+    40.59652567039544,
+    14.306339623629327
   ],
   "depletion_rate_history": {
     "HIGH_TRAFFIC": [
@@ -156,15 +157,15 @@
   "last_estimated_depleted_at": "2026-11-11T13:37:00+00:00",
   "last_estimated_restock_at": "2026-11-11T14:12:00+00:00",
   "last_notified_restock_normalized_at": "2026-10-18T11:30:00+00:00",
-  "last_observed_at": "2026-11-11T14:56:27.445530+00:00",
+  "last_observed_at": "2026-11-11T14:58:24.875987+00:00",
   "last_positive_observation": {
     "country": "UK",
     "item_id": 206,
-    "observed_at": "2026-11-11T14:56:27.445530+00:00",
-    "quantity": 2162
+    "observed_at": "2026-11-11T14:58:24.875987+00:00",
+    "quantity": 2134
   },
   "last_predicted_restock_at": "2026-11-11T16:27:00+00:00",
-  "last_quantity": 2162,
+  "last_quantity": 2134,
   "last_restock_normalized_at": "2026-11-11T14:12:00+00:00",
   "pending_notifications": [
     {
@@ -3240,6 +3241,7 @@
       "target_time": "2026-11-11T13:57:00+00:00"
     },
     {
+      "error_message": "Discord HTTP 404: {\"message\": \"Unknown Webhook\", \"code\": 10015}",
       "key": "BUSINESS_DEPARTURE_REMINDER:2026-11-11T13:37:00+00:00:2026-11-11T14:57:00+00:00",
       "notification_type": "BUSINESS_DEPARTURE_REMINDER",
       "prediction": {
@@ -3258,7 +3260,8 @@
         "predicted_restock_at": "2026-11-11T15:42:00+00:00",
         "prediction_method": "DEFAULT_125_TICKS"
       },
-      "status": "PENDING",
+      "sent_at": null,
+      "status": "FAILED",
       "target_time": "2026-11-11T14:57:00+00:00"
     }
   ],
