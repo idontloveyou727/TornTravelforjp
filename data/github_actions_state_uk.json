@@ -10,7 +10,8 @@
   },
   "current_cycle_depletion_rate_samples": [
     35.12751678900149,
-    12.261977768114658
+    12.261977768114658,
+    8.971814446794433
   ],
   "depletion_rate_history": {
     "HIGH_TRAFFIC": [
@@ -141,15 +142,15 @@
   "last_estimated_depleted_at": "2026-11-27T17:51:00+00:00",
   "last_estimated_restock_at": "2026-11-27T18:02:00+00:00",
   "last_notified_restock_normalized_at": "2026-10-18T11:30:00+00:00",
-  "last_observed_at": "2026-11-27T18:06:24.767128+00:00",
+  "last_observed_at": "2026-11-27T18:08:25.144116+00:00",
   "last_positive_observation": {
     "country": "UK",
     "item_id": 206,
-    "observed_at": "2026-11-27T18:06:24.767128+00:00",
-    "quantity": 2387
+    "observed_at": "2026-11-27T18:08:25.144116+00:00",
+    "quantity": 2369
   },
   "last_predicted_restock_at": "2026-11-27T20:13:00+00:00",
-  "last_quantity": 2387,
+  "last_quantity": 2369,
   "last_restock_normalized_at": "2026-11-27T18:02:00+00:00",
   "pending_notifications": [
     {
@@ -9537,6 +9538,7 @@
       "target_time": "2026-11-27T17:11:00+00:00"
     },
     {
+      "error_message": "Discord HTTP 404: {\"message\": \"Unknown Webhook\", \"code\": 10015}",
       "key": "AIRSTRIP_DEPARTURE_REMINDER:2026-11-27T17:51:00+00:00:2026-11-27T18:07:00+00:00",
       "notification_type": "AIRSTRIP_DEPARTURE_REMINDER",
       "prediction": {
@@ -9555,7 +9557,8 @@
         "predicted_restock_at": "2026-11-27T19:52:00+00:00",
         "prediction_method": "MEDIAN_HISTORY"
       },
-      "status": "PENDING",
+      "sent_at": null,
+      "status": "FAILED",
       "target_time": "2026-11-27T18:07:00+00:00"
     },
     {
